@@ -1,0 +1,81 @@
+
+@charset "ISO-8859-1";
+/* General Body Styling */
+body {
+font-family: Arial, sans-serif;
+background-color: #E1D7B7;
+color: #1E2A5E;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+/* Container for Form */
+.container {
+background-color: #FFFFFF;
+border-radius: 8px;
+box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+width: 300px;
+text-align: center;
+}
+
+/* Heading Style */
+h2 {
+	color: #55679C;
+margin-bottom: 20px;
+}
+/* Form Elements */
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+label {
+margin: 5px 0;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+	border:1px solid #55679C;
+	border-radius:4px;
+	padding:8px;
+	margin:5px 0 15px 0;
+	width:100%;
+}
+	
+input[type="submit"],
+button {
+background-color: #55679C;
+border: none;
+color: #FFFFFF;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover,
+button:hover {
+background-color: #7C93C3;
+
+}
+/* Link */	
+a{
+	color:#55679C;
+	text-decoration:none;
+	font-size:14x;
+}	
+a:haver{
+	text-decoration:underline;
+}
+	
+
+	
+	
+	

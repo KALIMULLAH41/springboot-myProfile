@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+</head>
+<body>
+
+    <h1>Profile Details</h1>
+    
+    <div>
+        <p><strong>Name:</strong> <span th:text="${profile.name}"></span></p>
+        <p><strong>Email:</strong> <span th:text="${profile.email}"></span></p>
+        <p><strong>Date of Birth:</strong> <span th:text="${profile.dob}"></span></p>
+        <p><strong>Gender:</strong> <span th:text="${profile.gender}"></span></p>
+        <p><strong>City:</strong> <span th:text="${profile.city}"></span></p>
+        <p><strong>Photo:</strong></p>
+        <img th:if="${profile.photoBase64}" 
+        th:src="'data:image/jpeg;base64,' + ${profile.photoBase64}" 
+        alt="Profile Photo" />
+        <p th:if="${!profile.photoBase64}">No photo available</p>
+    
+    </div>
+    <a href="/create">Back to Form</a>
+    
+   
+</body>
+</html>
